@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Painel de Cobrança Over 30</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Painel de Inadimplência</h1>
+        
+        <!-- Abas dos Analistas -->
+        <ul class="nav nav-tabs" id="analistasTab">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#lidiane">Lidiane</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#robson">Robson</a>
+            </li>
+        </ul>
+
+        <!-- Conteúdo das Abas -->
+        <div class="tab-content">
+            <div id="lidiane" class="tab-pane fade show active">
+                <h3>Clientes em Atraso (Lidiane)</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Placa</th>
+                            <th>Dias em Atraso</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaLidiane">
+                        <!-- Aqui vão os clientes -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="robson" class="tab-pane fade">
+                <h3>Clientes em Atraso (Robson)</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Placa</th>
+                            <th>Dias em Atraso</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaRobson">
+                        <!-- Aqui vão os clientes -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
